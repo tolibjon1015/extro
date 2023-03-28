@@ -1,0 +1,22 @@
+.width {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 10000;
+  transition: heigth 0.5s;
+}
+
+.flexnox {
+  width: 60px;
+  height: 60px;
+  border-radius: 7px 0px 0px 7px;
+  background: #039be5;
+  cursor: pointer;
+}
+
+.flexnox h2 {
+  text-align: center;
+  color: aliceblue;
+  padding: 10px;
+  transition: height 0.5s;
+}

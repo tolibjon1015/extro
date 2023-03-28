@@ -1,0 +1,94 @@
+.image img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+#first {
+  transition: all 0.5s;
+}
+
+.navlink .nav {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  font-size: 18px;
+  position: relative;
+}
+
+.navlink .nav:hover::before {
+  width: 80%;
+}
+
+.navlink .nav::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #160ca0;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  transition: all 0.5s;
+}
+
+.nav:hover {
+  color: #160ca0;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5%;
+  align-items: center;
+  background: #f5deb3;
+}
+
+.input {
+  width: 500px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.input input {
+  width: 500px;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.none {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .flexbox {
+    justify-content: space-between;
+    padding: 2%;
+    z-index: 11111;
+    display: flex;
+  }
+  .paddraw {
+    padding: 40px 2%;
+  }
+  .input {
+    display: none;
+    width: 85%;
+  }
+  .input input {
+    width: 100%;
+  }
+  .none {
+    display: block;
+  }
+  .imageNav {
+    width: 50px;
+    height: 50px;
+  }
+  .image {
+    display: block;
+  }
+  .media input {
+    display: block;
+  }
+}
